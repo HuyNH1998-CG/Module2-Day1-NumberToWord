@@ -52,6 +52,26 @@ public class Main {
                 System.out.println("out of ability");
             } else if (number % 100 == 0) {
                 System.out.println(hundred);
+
+            } else if (tens == 1) {
+                if (ones == 0) {
+                    one = "ten";
+                    System.out.println(hundred + " and " + one);
+                } else {
+                    switch (ones) {
+                        case 1 -> one = "eleventh";
+                        case 2 -> one = "twelve";
+                        case 3 -> one = "thirteen";
+                        case 4 -> one = "fourteen";
+                        case 5 -> one = "fifteen";
+                        case 6 -> one = "sixteen";
+                        case 7 -> one = "seventeen";
+                        case 8 -> one = "eighteen";
+                        case 9 -> one = "nineteen";
+                    }
+                    System.out.println(hundred + " " + one);
+                }
+
             } else {
                 System.out.println(hundred + " and " + ten + " " + one);
             }
